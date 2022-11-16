@@ -13,6 +13,10 @@ import {
   Text,
   useColorModeValue,
   Link,
+  Center,
+  Avatar,
+  AvatarBadge,
+  IconButton
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
@@ -52,7 +56,6 @@ export default function SignupCard() {
                   top="-10px"
                   colorScheme="red"
                   aria-label="remove Image"
-                  icon={<SmallCloseIcon />}
                 />
               </Avatar>
             </Center>
