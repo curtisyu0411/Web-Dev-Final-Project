@@ -1,3 +1,4 @@
+
 import {
   Flex,
   Box,
@@ -11,17 +12,17 @@ import {
   Button,
   Heading,
   Text,
-  useColorModeValue,
-  Link,
   Center,
   Avatar,
   AvatarBadge,
-  IconButton
+  IconButton,
+  useColorModeValue,
+  Link,
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 
-export default function SignupCard() {
+export default function Signup() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -36,7 +37,7 @@ export default function SignupCard() {
             Sign up
           </Heading>
           <Text fontSize={'lg'} color={'gray.600'}>
-            to see which library you should go to today
+            to find which library you should visit today
           </Text>
         </Stack>
         <Box
@@ -116,7 +117,7 @@ export default function SignupCard() {
             </Stack>
             <Stack pt={6}>
               <Text align={'center'}>
-                Already a user? <Link color={'blue.400'}>Login</Link>
+                Already a user? <Link href= '/SignIn' color={'blue.400'}>Login</Link>
               </Text>
             </Stack>
           </Stack>

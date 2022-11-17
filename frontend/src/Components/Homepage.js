@@ -41,7 +41,7 @@ export default function SplitScreen() {
           based on your preferences.
           </Text>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-          <Link href = '/Signup'>
+            <Link href='/Signup'>
                 <Button
                     rounded={'full'}
                     bg={'blue.400'}
@@ -52,7 +52,9 @@ export default function SplitScreen() {
                     Find my library
                 </Button>
             </Link>
-            <Button rounded={'full'}>Learn more</Button>
+            <Link>
+                <Button rounded={'full'}>Learn more</Button>
+            </Link>
           </Stack>
         </Stack>
       </Flex>
