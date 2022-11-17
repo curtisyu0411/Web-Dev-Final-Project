@@ -30,7 +30,7 @@ export default function SignupCard() {
       align={'center'}
       justify={'center'}
       bg={useColorModeValue('gray.50', 'gray.800')}>
-      <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
+      <Stack spacing={10} mx={'auto'} maxW={'lg'} py={12} px={4}>
         <Stack align={'center'}>
           <Heading fontSize={'4xl'} textAlign={'center'}>
             Sign up
@@ -54,7 +54,7 @@ export default function SignupCard() {
                   size="sm"
                   rounded="full"
                   top="-10px"
-                  colorScheme="red"
+                  colorScheme="green"
                   aria-label="remove Image"
                 />
               </Avatar>
@@ -65,11 +65,11 @@ export default function SignupCard() {
           </Stack>
         </FormControl>    
           <Stack spacing={4}>
-            <HStack>
             <FormControl id="Username" isRequired>
               <FormLabel>User name</FormLabel>
               <Input type="text" />
             </FormControl>
+            <HStack>
               <Box>
                 <FormControl id="firstName" isRequired>
                   <FormLabel>First Name</FormLabel>
@@ -77,7 +77,7 @@ export default function SignupCard() {
                 </FormControl>
               </Box>
               <Box>
-                <FormControl id="lastName">
+                <FormControl id="lastName" isRequired>
                   <FormLabel>Last Name</FormLabel>
                   <Input type="text" />
                 </FormControl>

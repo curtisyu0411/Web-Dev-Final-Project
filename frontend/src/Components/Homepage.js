@@ -6,6 +6,7 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  Link
 } from '@chakra-ui/react';
 
 export default function SplitScreen() {
@@ -40,16 +41,18 @@ export default function SplitScreen() {
           based on your preferences.
           </Text>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-            <Button
-              rounded={'full'}
-              bg={'blue.400'}
-              color={'white'}
-              _hover={{
-                bg: 'blue.500',
-              }}>
-              Sign up
-            </Button>
-            <Button rounded={'full'}>Find my library</Button>
+          <Link href = '/Signup'>
+                <Button
+                    rounded={'full'}
+                    bg={'blue.400'}
+                    color={'white'}
+                    _hover={{
+                        bg: 'blue.500',
+                    }}>
+                    Find my library
+                </Button>
+            </Link>
+            <Button rounded={'full'}>Learn more</Button>
           </Stack>
         </Stack>
       </Flex>
